@@ -55,3 +55,21 @@ function getRoundedObj() {
 function getMinMax() {
     return `Min: ${Math.min(4, -2, 5, 19, -130, 0, 10)}, Max: ${Math.max(4, -2, 5, 19, -130, 0, 10)}`;
 }
+
+// ========= WORK WITH Math.random
+
+// #9
+function getRandomFromArrange(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// #10
+function getRandomArray() {
+    const arr = [];
+    for(let i = 0; i < 10; i++) {
+        arr[i] = getRandomFromArrange(1, 100);
+    }
+    return arr;
+}
