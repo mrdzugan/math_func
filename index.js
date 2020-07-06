@@ -82,7 +82,30 @@ function getDifferenceModulus(a, b) {
 }
 
 // #12
-function getDifferenceModulusAdvanced(a,b) {
+function getDifferenceModulusAdvanced(a, b) {
     const c = Math.abs(a - b);
     return c;
+}
+
+// ========= Additional tasks
+
+// #13
+const arr = [12, 15, 20, 25, 59, 79];
+console.log(getAverage(arr));
+
+function getAverage(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+// #14
+function getFactorial(n) {
+    let fact = 1;
+    for (let i = fact + 1; i <= n; i++) {
+        fact *= i;
+    }
+    return `!${n} = ${fact}`;
 }
