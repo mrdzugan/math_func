@@ -48,3 +48,10 @@ function getRoundedObj() {
     obj.ceil = Math.ceil(num);
     return obj;
 }
+
+// ========= WORK WITH Math.min, Math.max
+
+// #8
+function getMinMax() {
+    return `Min: ${Math.min(4, -2, 5, 19, -130, 0, 10)}, Max: ${Math.max(4, -2, 5, 19, -130, 0, 10)}`;
+}
