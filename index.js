@@ -68,8 +68,21 @@ function getRandomFromArrange(min, max) {
 // #10
 function getRandomArray() {
     const arr = [];
-    for(let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
         arr[i] = getRandomFromArrange(1, 100);
     }
     return arr;
+}
+
+// ========= WORK WITH Math.abs
+
+// #11
+function getDifferenceModulus(a, b) {
+    return Math.abs(a - b);
+}
+
+// #12
+function getDifferenceModulusAdvanced(a,b) {
+    const c = Math.abs(a - b);
+    return c;
 }
