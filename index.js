@@ -29,3 +29,22 @@ function sqrtFromArray() {
     }
     return Math.sqrt(sum);
 }
+
+// ========= WORK WITH Math.round, Math.ceil, Math.floor, toFixed, toPrecision
+
+// #6
+function getRounded() {
+    const num = Math.sqrt(379);
+    for (let i = 0; i <= 2; i++) {
+        console.log(`toFixed: ${num.toFixed(i)}`);
+    }
+}
+
+// #7
+function getRoundedObj() {
+    const obj = {};
+    const num = Math.sqrt(587);
+    obj.floor = Math.floor(num);
+    obj.ceil = Math.ceil(num);
+    return obj;
+}
